@@ -1,5 +1,5 @@
 import { randomBg, randomString } from "../../utils"
-import { Header, Sidebar, Card } from '../../components'
+import { Header, Sidebar, Card, Story } from '../../components'
 import banner from '../../assets/banner.png'
 import foldericon from '../../assets/icon/foldericon.png'
 
@@ -61,20 +61,7 @@ const Home = () => {
 								)}
 							</div>
 						</div>
-						<div className='flex flex-col text-xs w-[300px] gap-2'>
-							<p>Recent Activity</p>
-							<div className="flex flex-col devide-y devide-gray-300 gap-4">
-								{new Array(5).fill(0).map((e, i) => 
-									<div className="flex">
-										<span className="mr-5">•</span>
-										<div className="flex flex-col">
-											<span className="text-zinc-400">Yesterday</span>
-											<span>User A added you to Project X</span>
-										</div>
-									</div>
-								)}
-							</div>
-						</div>
+						<Story title="Recent Activity" />
 					</div>
 				</div>
 			</div>
